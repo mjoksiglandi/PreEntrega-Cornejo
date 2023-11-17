@@ -48,10 +48,15 @@ nav {
     background-color: #444;  
     color: #fff;
 }
+.dropdown-item.active, 
+.dropdown-item:active {
+    background-color: #000307;
+    color: #fff;
+}
 /* Main content area */
 main {
     padding: 20px;
-    background-color: #000000; 
+    background-color: #030003 
 }
 
 
