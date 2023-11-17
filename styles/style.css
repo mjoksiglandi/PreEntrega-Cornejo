@@ -58,7 +58,9 @@ main {
     padding: 20px;
     background-color: #030003 
 }
-
+.text-body-services {
+    color: #666
+}
 
 /* Footer styles */
 footer {
