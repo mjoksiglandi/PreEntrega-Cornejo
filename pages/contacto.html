@@ -42,11 +42,29 @@
             </div>
           </nav>
       </header>
-    <main>
-
-
-
+      <main class="container my-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <h2 class="text-center mb-4">Contactanos</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Que servicio te interesa</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
     </main>
+
 
 
     <footer class="text-white text-center py-3">

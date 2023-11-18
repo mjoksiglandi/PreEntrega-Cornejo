@@ -62,6 +62,18 @@ main {
     color: #666
 }
 
+.btn-primary {
+    background-color: #444;
+    border-color: #333
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #fff; 
+    background-color: #666; 
+    border-color: #444; 
+}
+
 /* Footer styles */
 footer {
     background-color: #333;
