@@ -34,6 +34,10 @@ nav {
     background-color: #444;  
     color: #fff;
 }
+.nav-link.active.dropdown-toggle::after{
+    border-top-color :#000000
+}
+
 .dropdown-menu{
     background-color: #333;  
 }
