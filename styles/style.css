@@ -92,11 +92,11 @@ nav .dropdown-menu .dropdown-item.active, nav .dropdown-menu .dropdown-item:acti
   backface-visibility: hidden;
 }
 .coin .coin-inner .front {
-  background-color: #ffd700; /* Gold color */
+  background-color: #141414; /* Gold color */
   transform: rotateY(0deg);
 }
 .coin .coin-inner .back {
-  background-color: #c0c0c0; /* Silver color */
+  background-color: #0e0d0d; /* Silver color */
   transform: rotateY(180deg);
 }
 .coin:hover .coin-inner {

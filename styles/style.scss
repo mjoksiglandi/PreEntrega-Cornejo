@@ -89,11 +89,11 @@ nav {
           backface-visibility: hidden;
       }
       .front {
-          background-color: #ffd700; /* Gold color */
+          background-color: #141414; /* Gold color */
           transform: rotateY(0deg);
       }
       .back {
-          background-color: #c0c0c0; /* Silver color */
+          background-color: #0e0d0d; /* Silver color */
           transform: rotateY(180deg);
       }
   }
