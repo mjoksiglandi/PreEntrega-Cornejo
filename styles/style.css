@@ -56,12 +56,17 @@ nav .dropdown-menu .dropdown-item.active, nav .dropdown-menu .dropdown-item:acti
 .container1 {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .banner {
   background-color: #030003;
   text-align: center;
-  padding: 50px 0;
+  padding: 0;
 }
 .banner img {
   border-radius: 50%;
@@ -74,16 +79,15 @@ nav .dropdown-menu .dropdown-item.active, nav .dropdown-menu .dropdown-item:acti
 
 .coin {
   perspective: 1000px;
-  width: 200px; /* Adjust as needed */
-  height: 200px; /* Adjust as needed */
-  /* Animate the flip effect */
+  width: 200px;
+  height: 200px;
 }
 .coin .coin-inner {
   width: 100%;
   height: 100%;
   transition: transform 0.6s ease-in-out;
   transform-style: preserve-3d;
-  position: relative;
+  position: center;
 }
 .coin .coin-inner .side {
   width: 100%;
@@ -91,12 +95,12 @@ nav .dropdown-menu .dropdown-item.active, nav .dropdown-menu .dropdown-item:acti
   position: absolute;
   backface-visibility: hidden;
 }
-.coin .coin-inner .front {
-  background-color: #141414; /* Gold color */
+.coin .coin-inner .side.front {
+  background-color: #141414;
   transform: rotateY(0deg);
 }
-.coin .coin-inner .back {
-  background-color: #0e0d0d; /* Silver color */
+.coin .coin-inner .side.back {
+  background-color: #0e0d0d;
   transform: rotateY(180deg);
 }
 .coin:hover .coin-inner {
@@ -106,6 +110,9 @@ nav .dropdown-menu .dropdown-item.active, nav .dropdown-menu .dropdown-item:acti
 main {
   padding: 20px;
   background-color: #030003;
+}
+main .row {
+  margin-top: 50px;
 }
 main .text-body-services {
   color: #666;
