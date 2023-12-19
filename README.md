@@ -10,5 +10,5 @@ bootstrap
 ## Wireframes
 
 ![web_wireframe](/wireframe/wireframe.png)
-![web_mobile](wireframe_mobile.png)
+![web_mobile](/wireframe/wireframe_mobile.png)
 
