@@ -14,7 +14,9 @@ const login = () => {
     if (newUserName === userName1 || newUserName === userName2) {
       newpassword = parseInt(prompt("Introdusca su contraseña"));
       if  (newpassword == password1 || newpassword == password2){
-        alert("bienvenido un gusto que vuelvas");
+        alert("bienvenido un gusto que vuelvas"); 
+        continuar = false;
+        return continuar;
       }
       else{
         alert("contraseña incorrecta");
@@ -45,7 +47,6 @@ while (loginType != 0 && continuar) {
 
     case 1:
             login(); 
-            continuar = false;
       break;
             
       case 2: 
