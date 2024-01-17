@@ -5,6 +5,7 @@ var password2
 var userName2
 var loginType = parseInt(prompt( "\n1 Ingresar \n2 Registrar \n3 seguir como invitado "))
 var newpassword;
+let continuar = true;
 
 // loggin 
 const login = () => {  
@@ -14,6 +15,7 @@ const login = () => {
       newpassword = parseInt(prompt("Introdusca su contraseña"))
       if  (newpassword == password1 || newpassword == password2){
         alert("bienvenido un gusto que vuelvas");
+        continuar = false;
       }
       else{
         alert("contraseña incorrecta")
@@ -31,11 +33,12 @@ const registrar = () => {
  if (verificaPass == password2) {
    alert("gracias por registrarte " + userName2)
    return userName2 , password2
+   
  }else {
    alert("contraseña incorrecta")
  }
 }
-let continuar = true;
+
 
 while (loginType != 0 && continuar) {
     
