@@ -1,25 +1,23 @@
 alert("Bienvenido a TrashPanda Garage");
 const users = [
-  {userId: "admin", pass: "1234"},
-  {userId: "user1", pass: "4321"}
-]
+  { userId: "admin", pass: "1234" },
+  { userId: "user1", pass: "4321" },
+];
 let newpassword;
 let newUserName;
+let continuar = true;
 let loginType = parseInt(
   prompt("\n1 Ingresar \n2 Registrar \n3 seguir como invitado ")
 );
-let continuar = true;
-
-
 // loggin
-const login = () => {
-   newUserName = prompt("Introdusca su nombre de usuario");
-  const log = users.some(users => users.userId === newUserName)
-    console.log(log);
+function login() {
+  newUserName = prompt("Introdusca su nombre de usuario");
+  const log = users.some((users) => users.userId === newUserName);
+  console.log(log);
   if (log === true) {
-     newpassword = prompt("Introdusca su contraseña");
-    const logPass = users.some(users => users.pass ===  newpassword)
-      console.log(logPass);
+    newpassword = prompt("Introdusca su contraseña");
+    const logPass = users.some((users) => users.pass === newpassword);
+    console.log(logPass);
     if (logPass === true) {
       alert("bienvenido un gusto que vuelvas");
       continuar = false;
@@ -33,13 +31,13 @@ const login = () => {
 };
 
 // registro de nuevo usuario
-const registrar = () => {
+function registrar() {
   newUserName = prompt("ingresa tu nombre de usuario");
   newpassword = prompt("ingresa tu contraseña");
-  const newUser = {userId: newUserName, pass: newpassword};
+  const newUser = { userId: newUserName, pass: newpassword };
   users.push(newUser);
   console.log(users);
-};
+}
 
 while (loginType != 0 && continuar) {
   switch (loginType) {
