@@ -42,12 +42,12 @@ function registrar() {
   newUserName = prompt("ingresa tu nombre de usuario");
   newpassword = prompt("ingresa tu contraseña");
   newEmail = prompt("ingresa tu email");
-  newUser = prompt("ingresa tu nombre");
-  const newUser = { userId: newUserName, 
+  newUserTags = prompt("ingresa tu nombre");
+  const newUsers = { userId: newUserName, 
                     pass: newpassword,
                     email: newEmail,
                     name: newUserTags };
-  users.push(newUser);
+  users.push(newUsers);
   console.log(users);
 }
 while (loginType != 0 && continuar) {
