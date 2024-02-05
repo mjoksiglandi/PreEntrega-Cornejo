@@ -43,7 +43,7 @@ function registrar() {
   newpassword = prompt("ingresa tu contraseña");
   newEmail = prompt("ingresa tu email");
   newUserTags = prompt("ingresa tu nombre");
-  const newUsers = { userId: newUserName, 
+  let newUsers = { userId: newUserName, 
                     pass: newpassword,
                     email: newEmail,
                     name: newUserTags };
