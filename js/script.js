@@ -2,12 +2,10 @@ alert("Bienvenido a TrashPanda Garage");
 const users = [
   { userId: "admin", 
     pass: "1234", 
-    email: "admin@trashpandagarage.com",
-    name: "admin"}
+    email: "admin@trashpandagarage.com"}
 ];
 let newpassword;
 let newUserName;
-let newUserTags;
 let newEmail;
 let continuar = true;
 let loginType = parseInt(
@@ -42,14 +40,13 @@ function registrar() {
   newUserName = prompt("ingresa tu nombre de usuario");
   newpassword = prompt("ingresa tu contraseña");
   newEmail = prompt("ingresa tu email");
-  newUserTags = prompt("ingresa tu nombre");
   let newUsers = { userId: newUserName, 
                     pass: newpassword,
-                    email: newEmail,
-                    name: newUserTags };
+                    email: newEmail };
   users.push(newUsers);
   console.log(users);
 }
+
 while (loginType != 0 && continuar) {
   switch (loginType) {
     case 1:
