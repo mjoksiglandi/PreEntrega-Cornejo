@@ -7,7 +7,7 @@ const users = [
 ];
 let newpassword;
 let newUserName;
-let newUser;
+let newUserTags;
 let newEmail;
 let continuar = true;
 let loginType = parseInt(
@@ -46,7 +46,7 @@ function registrar() {
   const newUser = { userId: newUserName, 
                     pass: newpassword,
                     email: newEmail,
-                    user: newUser };
+                    name: newUserTags };
   users.push(newUser);
   console.log(users);
 }
