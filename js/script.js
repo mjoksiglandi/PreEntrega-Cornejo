@@ -1,14 +1,20 @@
 alert("Bienvenido a TrashPanda Garage");
 const users = [
-  { userId: "admin", pass: "1234" },
-  { userId: "user1", pass: "4321" },
+  { userId: "admin", 
+    pass: "1234", 
+    email: "admin@trashpandagarage.com",
+    name: "admin"}
 ];
 let newpassword;
 let newUserName;
+let newUser;
+let newEmail;
 let continuar = true;
 let loginType = parseInt(
   prompt("\n1 Ingresar \n2 Registrar \n3 seguir como invitado ")
 );
+
+
 // loggin
 function login() {
   newUserName = prompt("Introdusca su nombre de usuario");
@@ -20,6 +26,7 @@ function login() {
     console.log(logPass);
     if (logPass === true) {
       alert("bienvenido un gusto que vuelvas");
+      console.log(users);
       continuar = false;
       return continuar;
     } else {
@@ -34,21 +41,23 @@ function login() {
 function registrar() {
   newUserName = prompt("ingresa tu nombre de usuario");
   newpassword = prompt("ingresa tu contraseña");
-  const newUser = { userId: newUserName, pass: newpassword };
+  newEmail = prompt("ingresa tu email");
+  newUser = prompt("ingresa tu nombre");
+  const newUser = { userId: newUserName, 
+                    pass: newpassword,
+                    email: newEmail,
+                    user: newUser };
   users.push(newUser);
   console.log(users);
 }
-
 while (loginType != 0 && continuar) {
   switch (loginType) {
     case 1:
       login();
       break;
-
     case 2:
       registrar();
       break;
-
     case 3:
       alert("bienvenido");
       continuar = false;
