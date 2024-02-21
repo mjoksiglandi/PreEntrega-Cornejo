@@ -99,7 +99,8 @@ footer {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: 5px solid #444;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3019607843);
 }
@@ -195,5 +196,7 @@ main .btn-primary:hover, main .btn-primary:focus {
     padding: 10px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
+.error-message {
+  color: red;
+  display: none;
+}/*# sourceMappingURL=style.css.map */
