@@ -4,24 +4,23 @@ var users = [
 ];
 
 document.getElementById("loginForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault();
 
-    // Get input values
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
 
-    // Check if username and password are valid
     var validUser = users.find(function(user) {
         return user.userId === username && user.pass === password;
     });
 
     if (validUser) {
         alert("Login successful!");
-        // Redirect to a blank page after successful login
-        window.location.href = "../index.html"; // Change "blank.html" to the URL of your blank page
+        var loginButton = document.getElementById("loginButton");
+        loginButton.textContent = "Perfil";
+        loginButton.href = "./perfil.html"; 
+        window.location.href = "./perfil.html"; 
     } else {
-        // Show error message
-        document.getElementById("errorMessage").style.display = "block";
+        alert("Invalid username or password");
     }
 });
 
@@ -35,3 +34,4 @@ function addNewUser() {
     users.push(newUser);
     alert("New user added successfully!");
 }
+
