@@ -1,6 +1,6 @@
 
 
-let users = []
+var users = []
 //     { userId: "admin", pass: "1234", email: "admin@trashpandagarage.com"}  hardcode de usuario
 // ];
 
