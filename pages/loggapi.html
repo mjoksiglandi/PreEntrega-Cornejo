@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Login</title>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name="google-signin-client_id" content="837321605841-gqkiceq1mujlqgd2qab1jaic7ttd0mv3.apps.googleusercontent.com">
+</head>
+<body>
+  <div id="loginButton">
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+  </div>
+
+  <script>
+    function onSignIn(googleUser) {
+      var profile = googleUser.getBasicProfile();
+      console.log('ID: ' + profile.getId()); // No incluye información sensible, como el correo electrónico del usuario
+      console.log('Nombre: ' + profile.getName());
+      console.log('URL de imagen del perfil: ' + profile.getImageUrl());
+      console.log('Correo electrónico: ' + profile.getEmail()); // Esta línea solo está disponible si se solicita el permiso 'email'
+    }
+  </script>
+</body>
+</html>
