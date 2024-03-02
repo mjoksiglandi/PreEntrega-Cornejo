@@ -14,6 +14,7 @@
 
   <script>
     function onSignIn(googleUser) {
+        window.location.href = "./perfil.html"; 
       var profile = googleUser.getBasicProfile();
       console.log('ID: ' + profile.getId()); // No incluye información sensible, como el correo electrónico del usuario
       console.log('Nombre: ' + profile.getName());
