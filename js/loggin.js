@@ -20,17 +20,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 
     let validUser = users.find(function(user) {
         return user.userId === username && user.pass === password;
-    });
-
-    if (validUser) {
-        alert("Login successful!");
-        // let loginButton = document.getElementById("loginButton");
-        // loginButton.textContent = "Perfil";                        buscar como cambiar el loggin a perfil al estar loggeado
-        // loginButton.href = "./perfil.html"; 
-        window.location.href = "./perfil.html"; 
-        localStorage.setItem('userData', JSON.stringify(validUser));
-    } else {
-        alert("Invalid username or password");
+    });   
     }
 });
 
